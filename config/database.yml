@@ -15,8 +15,17 @@ test:
   pool: 5
   timeout: 5000
 
+#production:
+#  adapter: sqlite3
+#  database: db/production.sqlite3
+#  pool: 5
+#  timeout: 5000
+
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: mysql2
+  encoding: utf8
+  database: different-bromine
+  username: test_user
+  password: password
+  host: 29f168e007f60e35761846dbf426c13205b30c45.rackspaceclouddb.com
+  port: 3306

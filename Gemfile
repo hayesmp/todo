@@ -12,6 +12,13 @@ gem 'jquery-rails'
 gem 'rails_autolink'
 gem 'ey_config'
 
+gem 'rumm', '0.0.6'
+gem "knife-solo", ">= 0.3.0pre3"
+gem "berkshelf"
+
+gem 'capistrano'
+gem 'capistrano-rbenv'
+
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
@@ -19,7 +26,7 @@ group :assets do
 end
 
 platform :ruby do
-  gem 'pg'
+  #gem 'pg'
   gem 'sqlite3'
   gem 'mysql2'
   gem 'unicorn'
@@ -31,7 +38,7 @@ platforms :jruby do
   gem 'jruby-openssl'
   gem 'jdbc-mysql', :require => false
   gem 'jdbc-sqlite3', :require => false
-  gem 'jdbc-postgres', :require => false
+  #gem 'jdbc-postgres', :require => false
   gem 'trinidad'
   gem 'thor'
 end
