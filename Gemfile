@@ -25,11 +25,14 @@ group :assets do
   gem 'uglifier'
 end
 
-platform :ruby do
-  #gem 'pg'
+group :development do
   gem 'sqlite3'
+end
+
+group :production do
   gem 'mysql2'
   gem 'unicorn'
+  gem 'puma'
 end
 
 platforms :jruby do

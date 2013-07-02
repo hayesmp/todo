@@ -1,0 +1,8 @@
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: different-bromine
+  username: test_user
+  password: password
+  host: 29f168e007f60e35761846dbf426c13205b30c45.rackspaceclouddb.com
+  port: 3306
