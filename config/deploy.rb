@@ -8,7 +8,7 @@ require 'bundler/capistrano'
 server '166.78.106.233' , :web, :app, :db, primary: true
 set :application, "my_app"
 set :scm, 'git'
-set :repository, 'git@github.com:engineyard/todo.git'
+set :repository, 'git@github.com:hayesmp/todo.git'
 set :branch, 'master'
 set :user, 'root'
 default_run_options[:pty] = true
